@@ -8,6 +8,10 @@ open timelapseImageFinal.py in an editor and set:
     timeMinutes = [a] #set this to the number of minutes you wish to run your timelapse camera
     
     secondsInterval = [b] #number of seconds delay between each photo taken
+
+Just incase, dont forget to:
+
+    sudo apt install git
   
 May also be necessary to change permissions of the Pictures folder, to make deleting.moving easier:
 
