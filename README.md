@@ -15,6 +15,21 @@ May also be necessary to change permissions of the Pictures folder, to make dele
   
     chmod 777 /home/[yourPiName]/Pictures
 
+You will need to add extra GPU memory if you intend to use a high resolution camera
+
+It may also be necessary to enable legacy camera mode.
+
+In terminal: 
+  
+    sudo raspi-config
+
+This will bring you to the config window.
+
+in '3 Interface Options' you will find the legacy camera setting,
+
+In '4 Performance Options' you will find the GPU memory setting,
+
+For GPU memory, doubling it from 128 to 256 is usually enough.
     
 **----------------------------------------------------------------------------------------**
 
