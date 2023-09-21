@@ -23,7 +23,7 @@ if runProgram.lower() == "n":
         quit
 
 elif runProgram.lower() =="y":
-        print ("test running sucessful") 
+        #print ("test running sucessful") 
         
         print("10 second delay for reading - terminate anytime with [ CTRL + C ]")
         print("")
@@ -56,14 +56,17 @@ elif runProgram.lower() =="y":
         sleep(x)
 
         camera.stop_preview()
+        camera.close()
         
         
         #time to cancel the command before it generates files
-        print("Timelapse script is starting... [ Ctrl + C = Terminate ]")
+        print("")
+        print("Timelapse script is starting... [ Ctrl + C = Terminate at any time]")
         sleep(10)
 
-        
+        print("")
         print("number of photos to take = ", numPhotos)
+        print("")
         
         dateRaw= datetime.datetime.now()
         startDateTimeFormat = dateRaw.strftime("%Y-%m-%d_%H:%M:%S")
