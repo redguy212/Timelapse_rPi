@@ -67,6 +67,6 @@ Edit the Autostart file:
   
   add line:
   
-    @lxterminal -e /home/pi/StartScript.sh
+    @lxterminal -e [path to where the startScript.sh code is saved, including the file]
   
   then press: CTRL + X, Y, Enter
