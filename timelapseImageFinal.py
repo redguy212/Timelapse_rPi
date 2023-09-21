@@ -75,7 +75,7 @@ elif runProgram.lower() =="y":
         print("The Pi has now started taking photos for your timelapse, start time: " + startDateTimeFormat)
         
         camera = PiCamera()
-        camera.resolution = (4000, 3000)
+        camera.resolution = (3000, 2000)
         
         for i in range(numPhotos):
             camera.capture('/home/timelapse1/Pictures/' + startDateTimeFormat +'/{0:06d}.jpg'.format(i))
