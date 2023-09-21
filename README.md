@@ -9,7 +9,13 @@ open timelapseImageFinal.py in an editor and set:
     
     secondsInterval = [b] #number of seconds delay between each photo taken
   
+May also be necessary to change permissions of the Pictures folder, to make deleting.moving easier:
 
+  In terminal: 
+  
+    chmod 777 /home/[yourPiName]/Pictures
+
+    
 **----------------------------------------------------------------------------------------**
 
 **Steps necessary for timelapse script to work on reboot/start**
